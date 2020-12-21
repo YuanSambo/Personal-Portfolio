@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap");
 html {
   width: 100%;
   height: 100%;
   font-size: 15px;
+  background-repeat: no-repeat;
 }
+
 body {
   padding: 0;
   margin: 0;
@@ -15,14 +17,15 @@ body {
   );
   color: aliceblue;
   font-family: "Raleway", sans-serif;
-  font-weight: 300;
-  font-size: 1.5em;
-  /* background-image: linear-gradient(
+
+  font-weight: 200;
+  font-size: 1.6em;
+  background-image: linear-gradient(
     to top,
     #1e3c72 0%,
     #1e3c72 1%,
     #1e3c72 100%
-  ); */
+  );
 }
 
 a,
@@ -43,30 +46,13 @@ a:hover {
   text-transform: uppercase;
   font-size: 1.5em;
 }
-.nav_links {
-  list-style-type: none;
-  padding: 10px;
-  margin: 0;
-}
-
-.nav_links li {
-  display: inline-block;
-  margin: 0 20px;
-}
-
-.nav_links a {
-  color: aliceblue;
-}
-
-.nav_links :hover {
-  color: #f3e26e;
-}
 
 /* =========== ABOUT AREA ========= */
 
 .about-area {
-  padding: 160px 100px;
-  font-size: 34px;
+  display: flex;
+  padding: 150px 100px 100px 100px;
+  font-size: 2.2rem;
 }
 
 .intro_hi {
@@ -75,7 +61,6 @@ a:hover {
 }
 
 .intro_tagline {
-  font-weight: 200;
   width: 70%;
   margin: 0;
   margin-bottom: 20px;
@@ -84,35 +69,106 @@ a:hover {
 .intro_contact {
   font-size: 0.7em;
   font-weight: 200;
-  padding: 10px 0;
-
+  padding: 10px 0px;
+  width: 80%;
 }
 
-.intro_profile{
+.intro_profile {
   position: relative;
+  width: auto;
+  height: auto;
   float: right;
   bottom: 220px;
-  right:80px;
+  right: 80px;
 }
 
-.intro_profile img{
-    transform:scale(2.2);
-    height:auto;
-    border: 1px solid;
-    border-radius: 50%;
-    box-shadow: 0 10px 9px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
-
-  
+.intro_profile img {
+  transform: scale(2);
+  height: auto;
+  border: 1px solid;
+  border-radius: 50%;
+  box-shadow: 0 10px 9px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
 }
 #email {
-  color: #f3e26e;
+  color: aliceblue;
   text-decoration: underline;
+  text-decoration-color: #f3e26e;
 }
 
+#email:hover {
+  color: #f3e26e;
+}
 /* =========== SKILLS AREA ========= */
 
 .skills-area {
-  background-color: aliceblue;
-  color: #1e3c72;
-  padding: 200px;
+  display: flex;
+  padding: 50px 200px;
+  width: 100%;
+  display: inline-block;
+
+}
+
+
+.skills-area_label,
+.skills-area_title {
+  display: flex;
+  padding: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.skills-area_title {
+  color: #f3e26e;
+  font-size: 1.2em;
+  padding:20px 100px 20px 0px;
+}
+
+.skills-area_skills {
+  list-style: none;
+  padding: 0;
+  margin-left: 15px;
+}
+
+.skills-area li {
+  margin: 0px;
+  padding: 10px;
+}
+
+/* =========== PROJECT AREA ========= */
+.projects-area {
+  display: flex;
+  padding: 100px;
+  width: 100%;
+  display: inline-block;
+  font-size:0.8em;
+}
+.projects-area_title{
+  color: #f3e26e;
+  font-weight: 400;
+  font-size: 1.5em;
+  text-transform:uppercase;
+  margin-left:100px;
+}
+
+.projects-area h3{
+  color:#f3e26e;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* =========== FOOTER ========= */
+footer {
+  display: flex;
+  padding: 50px;
+  justify-content: space-between;
+}
+
+footer ul{
+  list-style-type: none;
+}
+
+footer li{
+  display:inline-block;
+  margin: 0px 30px;
+  color:#f3e26e;
 }
