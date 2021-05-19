@@ -85,12 +85,11 @@
   }
 
   .intro_profile img {
-    width: 50%;
+    width: 80%;
     object-fit: cover;
     height: auto;
-    border: 1px solid;
+    border: 0px solid;
     border-radius: 50%;
-    box-shadow: 0 10px 9px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
   #email {
