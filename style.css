@@ -28,6 +28,9 @@
   a,
   a:hover {
     text-decoration: none;
+    color: aliceblue;
+    text-decoration: underline;
+    text-decoration-color: #f3e26e;
   }
 
   /* =========== NAVIGATION BAR ========= */
@@ -87,15 +90,13 @@
   .intro_profile img {
     width: 80%;
     object-fit: cover;
-    height: auto;
+    height: 50%;
     border: 0px solid;
     border-radius: 50%;
   }
 
   #email {
-    color: aliceblue;
-    text-decoration: underline;
-    text-decoration-color: #f3e26e;
+    
   }
 
   #email:hover {
@@ -148,6 +149,15 @@
     font-size: 1.5em;
     text-transform: uppercase;
     padding-bottom: 40px;
+  }
+
+  .projects-area_game-cover{
+    text-align: center;
+  }
+
+  .projects-area_game-cover img{
+    height: 100%;
+    width: 100%;
   }
 
   .projects-area h3 {
